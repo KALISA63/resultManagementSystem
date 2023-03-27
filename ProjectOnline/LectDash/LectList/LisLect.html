@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Banana Skul - Students</title>
+
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    a
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header">
+
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src=" img/logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <a href="javascript:void(0);" id="toggle_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+
+            <a class="mobile_btn" id="mobile_btn">
+                <i class="fas fa-bars"></i>
+            </a>
+
+
+            <ul class="nav user-menu">
+                <li class="nav-item dropdown language-drop me-2">
+                    <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+                        <img class="apple" src="img/apple.png" alt="">
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown noti-dropdown me-2">
+                    <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+                        <img src=" img/icons/header-icon-05.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="nav-item zoom-screen me-2">
+                    <a href="#" class="nav-link header-nav-list">
+                        <img src=" img/icons/header-icon-04.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown has-arrow new-user-menus">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <span class="user-img">
+                            <img class="rounded-circle" src=" img/profiles/avatar-01.jpg" width="31"
+                                alt="Ryan Taylor">
+                            <div class="user-text">
+                                <h6>UMUTARE Angel</h6>
+                                <p class="text-muted mb-0">Administrator</p>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                            <span>Main Menu</span>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                            </svg></i> <span> Dashboard</span>
+                            <ul>
+                                <li><a href="../../adminDash/index.html">Admin Dashboard</a></li>
+                                <!-- <li><a href="Lecture-dashboard.html">Lecture Dashboard</a></li>
+                                <li><a href="student-dashboard.html">Student Dashboard</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="submenu ">
+                            <a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                            </svg></i> <span> Students</span>
+                            <ul>
+                                <li><a href="../../StudDash/studList/students.html" >Student List</a></li>
+                                <li><a href="../../StudDash/studView/studView.html">Student View</a></li>
+                                <li><a href="../../StudDash/studAdd/add-student.html">Student Add</a></li>
+                                <li><a href="../../StudDash/studEdit/">Student Edit</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu active">
+                            <a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
+                                <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
+                            </svg></i> <span> Lectures</span>
+                            <ul>
+                                <li><a href="ListLect.html" class="active">Lecture List</a></li>
+                                <li><a href="../LectView/lectView.html">Lecture View</a></li>
+                                <li><a href="../LectAdd/addLect.html">Lecture Add</a></li>
+                                <li><a href="../LectEdit/editLect.html">Lecture Edit</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
+                                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
+                            </svg></i> <span> Departments</span>
+                            <ul>
+                                <li><a href="../../DepartDash/DepList/depList.html">Department List</a></li>
+                                <li><a href="../../DepartDash/DepAdd/depAdd.html">Department Add</a></li>
+                                <li><a href="../../DepartDash/DepEdt/depEdt.html">Department Edit</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg></i> <span> Subjects</span>
+                            <ul>
+                                <li><a href="../../SubjDash/subj-lis/subList.html">Subject List</a></li>
+                                <li><a href="../../SubjDash/SubAdd/subAdd.html">Subject Add</a></li>
+                                <li><a href="../../SubjDash/SubAdd/subAdd.html">Subject Edit</a></li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-sub-header">
+                                <h3 class="page-title">Lectures</h3>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="ListLect.html">Lecture</a></li>
+                                    <li class="breadcrumb-item active">All Lectures</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="student-group-form">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by ID ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by Name ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by Phone ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="search-student-btn">
+                                <button type="btn" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card card-table comman-shadow">
+                            <div class="card-body">
+
+                                <div class="page-header">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h3 class="page-title">Students</h3>
+                                        </div>
+                                        <div class="col-auto text-end float-end ms-auto download-grp">
+                                            <a href="students.html" class="btn btn-outline-gray me-2 active"><i
+                                                    class="feather-list"></i></a>
+                                            <a href="students-grid.html" class="btn btn-outline-gray me-2"><i
+                                                    class="feather-grid"></i></a>
+                                            <a href="#" class="btn btn-outline-primary me-2"><i
+                                                    class="fas fa-download"></i> Download</a>
+                                            <a href="add-student.html" class="btn btn-primary"><i
+                                                    class="fas fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table
+                                        class="table border-0 star-student table-hover table-center mb-0 datatable table-striped">
+                                        <thead class="student-thread">
+                                            <tr>
+                                                <th>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </th>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Class</th>
+                                                <th>DOB</th>
+                                                <th>Parent Name</th>
+                                                <th>Mobile Number</th>
+                                                <th>Address</th>
+                                                <th class="text-end">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE2209</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-17.jpg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Kaphia</a>
+                                                    </h2>
+                                                </td>
+                                                <td>10 A</td>
+                                                <td>2 Feb 2002</td>
+                                                <td>Shogal</td>
+                                                <td>097 3584 5870</td>
+                                                <td>911 South Calorina,USA</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE2213</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-13.jpg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Kaberuka</a>
+                                                    </h2>
+                                                </td>
+                                                <td>8 A</td>
+                                                <td>3 June 1994</td>
+                                                <td>Habumugisha Enock</td>
+                                                <td>242 362 3100</td>
+                                                <td>Bacardi Rd P.O. Box N-4880, Texas</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE2143</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-02.png"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Murenzi</a>
+                                                    </h2>
+                                                </td>
+                                                <td>10 A</td>
+                                                <td>12 Apr 2002</td>
+                                                <td>Jermie</td>
+                                                <td>026 7318 4366</td>
+                                                <td>P.O. Box: 41, Gaborone</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE2431</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-03.png"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Kanyange</a>
+                                                    </h2>
+                                                </td>
+                                                <td>11 C</td>
+                                                <td>24 Feb 2000</td>
+                                                <td>Bahati</td>
+                                                <td>952 512 4909</td>
+                                                <td>Beligian</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE1534</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-04.jpeg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Solange</a>
+                                                    </h2>
+                                                </td>
+                                                <td>10 A</td>
+                                                <td>22 Jul 2006</td>
+                                                <td>Odette</td>
+                                                <td>413 289 1314</td>
+                                                <td>2844 Washington D.C</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE2153</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-05.jpg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Uwimana</a>
+                                                    </h2>
+                                                </td>
+                                                <td>9 B</td>
+                                                <td>8 Dec 2003</td>
+                                                <td>Bigwi Prince</td>
+                                                <td>701 753 3810</td>
+                                                <td>1900 Kinshasa</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE1252</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-06.jpeg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Umuhire Sandra</a>
+                                                    </h2>
+                                                </td>
+                                                <td>11 C</td>
+                                                <td>7 Oct 2000</td>
+                                                <td>Karingo James</td>
+                                                <td>402 221 7523</td>
+                                                <td>3979 Ashwood Drive, Omaha</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE1434</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-07.jpg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Kalisa Mbanda</a>
+                                                    </h2>
+                                                </td>
+                                                <td>10 A</td>
+                                                <td>4 Jan 2002</td>
+                                                <td></td>
+                                                <td>402 221 7523</td>
+                                                <td>South Kivu</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE2345</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-08.jpeg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Kalisa</a>
+                                                    </h2>
+                                                </td>
+                                                <td>9 A</td>
+                                                <td>1 Feb 2006</td>
+                                                <td>Jacques</td>
+                                                <td>04 2239 968</td>
+                                                <td>Lubumbashi</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE2365</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-09.jpg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Iradukunda</a>
+                                                    </h2>
+                                                </td>
+                                                <td>11 B</td>
+                                                <td>13 Sept 2003</td>
+                                                <td>Bienvenue</td>
+                                                <td>870 663 2334</td>
+                                                <td>Espagne</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="something">
+                                                    </div>
+                                                </td>
+                                                <td>PRE1234</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="student-details.html"
+                                                            class="avatar avatar-sm me-2"><img
+                                                                class="avatar-img rounded-circle"
+                                                                src=" img/profiles/avatar-10.jpg"
+                                                                alt="User Image"></a>
+                                                        <a href="student-details.html">Irakoze Agnes</a>
+                                                    </h2>
+                                                </td>
+                                                <td>10 B</td>
+                                                <td>26 Apr 1994</td>
+                                                <td>Reponse</td>
+                                                <td>077 3499 9959</td>
+                                                <td>Geogia</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;"
+                                                            class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <script src=" js/jquery-3.6.0.min.js"></script>
+
+    <script src=" plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src=" js/feather.min.js"></script>
+
+    <script src=" plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src=" plugins/datatables/datatables.min.js"></script>
+
+    <script src=" js/script.js"></script>
+</body>
+
+</html>

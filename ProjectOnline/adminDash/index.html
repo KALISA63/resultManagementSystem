@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Banana Skul- Dashboard</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header">
+
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src=" img/logo.jpg" alt="Logo">
+                </a>
+                <a href="index.html" class="logo logo-small">
+                    <img src=" img/logo-small.png" alt="Logo" width="30" height="30">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <a href="javascript:void(0);" id="toggle_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+
+            <a class="mobile_btn" id="mobile_btn">
+                <i class="fas fa-bars"></i>
+            </a>
+
+
+            <ul class="nav user-menu">
+                <li class="nav-item dropdown language-drop me-2">
+                    <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+                        <img class="apple" src="img/apple.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item dropdown noti-dropdown me-2">
+                    <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+                        <img src=" img/icons/header-icon-05.svg" alt="">
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <!-- <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div> -->
+                </li>
+
+                <li class="nav-item zoom-screen me-2">
+                    <a href="#" class="nav-link header-nav-list">
+                        <img src=" img/icons/header-icon-04.svg" alt="">
+                    </a>
+                </li>
+
+
+                <li class="nav-item dropdown has-arrow new-user-menus">
+                        <span class="user-img">
+                            <img class="rounded-circle" src=" img/avatar-01.jpg" width="31" alt="Ryan Taylor">
+                            <div class="user-text">
+                                <h6>UMUTARE Angel</h6>
+                                <p class="text-muted mb-0">Administrator</p>
+                            </div>
+                        </span>
+</div>
+
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <ul>
+                    <li class="menu-title">
+                        <span>Main Menu</span>
+                    </li>
+                    <li class="submenu active">
+                        <a href="#"><i class="feather-grid"></i> <span> Dashboard</span>  
+                    </li>
+                    <li class="submenu">
+                        <a href=""><i class="fas fa-graduation-cap"></i> <span> Students</span>  
+                        <ul>
+                            <li><a href="../StudDash/studList/students.html">Student List</a></li>
+                            <li><a href="../StudDash/studView/studView.html">Student View</a></li>
+                            <li><a href="../StudDash/studAdd/add-student.html">Student Add</a></li>
+                            <li><a href="../StudDash/studEdit/edit-student.html">Student Edit</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Lectures</span>  
+                        <ul>
+                            <li><a href="../LectDash/LectList/LisLect.html">Lecture List</a></li>
+                            <li><a href="../LectDash/LectView/lectView.html">Lecture View</a></li>
+                            <li><a href="../LectDash/LectAdd/addLect.html">Lecture Add</a></li>
+                            <li><a href="../LectDash/LectEdit/editLect.html">Lecture Edit</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#"><i class="fas fa-building"></i> <span> Departments</span>  
+                        <ul>
+                            <li><a href="../DepartDash/DepList/depList.html">Department List</a></li>
+                            <li><a href="../DepartDash/DepAdd/depAdd.html">Department Add</a></li>
+                            <li><a href="../DepartDash/DepEdt/depEdt.html">Department Edit</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#"><i class="fas fa-book-reader"></i> <span> Subjects</span>  
+                        <ul>
+                            <li><a href="../SubjDash/subj-lis/subList.html">Subject List</a></li>
+                            <li><a href="../SubjDash/SubAdd/subAdd.html">Subject Add</a></li>
+                            <li><a href="../SubjDash/SubEdt/subEdt.html">Subject Edit</a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-wrapper">
+        <div class="content container-fluid">
+
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-sub-header">
+                            <h3 class="page-title">Welcome Admin!</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active">Admin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                    <div class="card bg-comman w-100">
+                        <div class="card-body">
+                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                <div class="db-info">
+                                    <h6>Students</h6>
+                                    <h3>50055</h3>
+                                </div>
+                                <div class="db-icon">
+                                    <img src=" img/icons/dash-icon-01.svg" alt="Dashboard Icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                    <div class="card bg-comman w-100">
+                        <div class="card-body">
+                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                <div class="db-info">
+                                    <h6>Awards</h6>
+                                    <h3>50+</h3>
+                                </div>
+                                <div class="db-icon">
+                                    <img src=" img/icons/dash-icon-02.svg" alt="Dashboard Icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                    <div class="card bg-comman w-100">
+                        <div class="card-body">
+                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                <div class="db-info">
+                                    <h6>Department</h6>
+                                    <h3>30+</h3>
+                                </div>
+                                <div class="db-icon">
+                                    <img src=" img/icons/dash-icon-03.svg" alt="Dashboard Icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                    <div class="card bg-comman w-100">
+                        <div class="card-body">
+                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                <div class="db-info">
+                                    <h6>Revenue</h6>
+                                    <h3>$505</h3>
+                                </div>
+                                <div class="db-icon">
+                                    <img src=" img/icons/dash-icon-04.svg" alt="Dashboard Icon">
+
+
+                                </div>
+
+
+                                <script src=" js/jquery-3.6.0.min.js"></script>
+
+                                <script src=" js/script.js"></script>
+</body>
+
+</html>
