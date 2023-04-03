@@ -9,6 +9,9 @@ function addLecture() {
       const bloodGroup=document.getElementById('bloodGroup').value;
       const course=document.getElementById('course').value;
       const phone=document.getElementById('telNum').value;
+      const dateOfBirth=document.getElementById('calender').value;
+      const religion=document.getElementById('relig').value;
+      const depart=document.getElementById('depart').value;
       const image=document.getElementById('uploadImage').value;
     
     
@@ -25,6 +28,9 @@ function addLecture() {
       console.log("course",course);
       console.log("telNum",phone);
       console.log("uploadImage",image);
+      console.log("relig",religion);
+      console.log("depart",depart);
+      console.log("calender",dateOfBirth);
     
     
     //   if (email !== "" && password !== "") {
@@ -36,13 +42,16 @@ function addLecture() {
           data: {
             firstName:firstName,
             lastName:lastName,
-            lectId:lectureId,
+            // lectId:lectureId,
             gender:gender,
-            DoB:dateBirth,
             bloodGroup:bloodGroup,
             phoneNum:phone,
             email:email,
-            password:password,    
+            password:password, 
+            course:course,
+            DoB:dateOfBirth,
+            religion:religion,
+            section:depart,
           },
         })
           .then((res) => {
