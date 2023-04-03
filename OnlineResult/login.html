@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Registration form</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js">     
+    </script>
 </head>
 <body>
     <div class="hero">
@@ -19,15 +22,13 @@
                 <img src="tw.png" alt="">
                 <img src="gp.png" alt="">
             </div>
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="Enter your E-mail" required>
-                <input type="password" class="input-field" placeholder="Enter your Password" required>
+            <div class="input-group">
+                <input type="text" class="input-field" placeholder="Enter your E-mail" id="exampleInputEmail1" required>
+                <input type="password" class="input-field" placeholder="Enter your Password" id="exampleInputPassword1" required>
                 <input type="checkbox" class="check-box"><span>Show Password</span>
-                <a href=""><button type="submit" class="submit-btn">Login</button></a>
+                <button id="login" onclick="login()" class="submit-btn">Login</button>
                 <a href="#">Forget Password</a>
-            </form>
-        
-            </form> 
+            </div>
         </div>
         
     </div>
