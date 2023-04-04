@@ -8,20 +8,21 @@ function login() {
 
     axios({
         method: 'POST',
-        url: "localhost:6000/users/login",
+        url: "https://online-result-management-system.onrender.com/users/login",
         data: {
                 email: email,
                 password: password,
               }
     }).then((res)=>{
-        console.log(res)
-        if (res.role=="admin"){
+        console.log(res.data)
+        localStorage.setItem('token',res.data.token);
+        if (res.data.others.role=="admin"){
           window.location.href = "../ProjectOnline/adminDash/index.html"
         }
-        if(res.role=="lecture"){
+        if(res.data.others.role=="lecture"){
           window.location.href = "../ProjectOnline/LectDash/LectView/lectView.html"
         }
-        if(res.role=="student"){
+        if(res.data.others.role=="student"){
           window.location.href="../ProjectOnline/StudDash/studView/studView.html"
         }
 
