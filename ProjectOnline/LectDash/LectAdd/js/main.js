@@ -31,6 +31,7 @@ function addLecture() {
       console.log("relig",religion);
       console.log("depart",depart);
       console.log("calender",dateOfBirth);
+      
     
     
     //   if (email !== "" && password !== "") {
@@ -42,7 +43,7 @@ function addLecture() {
           data: {
             firstName:firstName,
             lastName:lastName,
-            // lectId:lectureId,
+            lectId:lectureId,
             gender:gender,
             bloodGroup:bloodGroup,
             phoneNum:phone,

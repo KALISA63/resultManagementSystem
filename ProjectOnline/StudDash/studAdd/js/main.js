@@ -1,63 +1,65 @@
 function addStudent() {
-//   alert("Hello again");
-  const email = document.getElementById("inputEmail1").value;
-  const firstName = document.getElementById("firstName").value;
-  const lastName = document.getElementById("lastName").value;
-  const gender = document.getElementById("gender").value;
-  const dateBirth = document.getElementById("DoB").value;
-  const regNum=document.getElementById('rollNum').value;
-  const bloodGroup=document.getElementById('bloodGroup').value;
-  const religion=document.getElementById('Religion').value;
-  const classRoom=document.getElementById('classRoom').value;
-  const section=document.getElementById('Section').value;
-  const admission=document.getElementById('admission').value;
-  const phoneNum=document.getElementById('phoneNum').value;
-  const image=document.getElementById('uploadImage').value;
+  alert("Hello again");
+const email = document.getElementById("inputEmail1").value;
+const firstName = document.getElementById("firstName").value;
+const lastName = document.getElementById("lastName").value;
+const gender = document.getElementById("gender").value;
+const password = document.getElementById("password").value;
+const bloodGroup=document.getElementById('bloodGroup').value;
+const course=document.getElementById('course').value;
+const phone=document.getElementById('telNum').value;
+const dateOfBirth=document.getElementById('calender').value;
+const religion=document.getElementById('relig').value;
+const depart=document.getElementById('depart').value;
+const studentId=document.getElementById('regNum').value;
+// const image=document.getElementById('uploadImage').value;
 
 
 
 //   alert("email");
 
-  console.log("email", email);
-  console.log("firstName",firstName);
-  console.log("lastName",lastName);
-  console.log("gender",gender);
-  console.log("BoD1",dateBirth);
-  console.log("rollNum",regNum);
-  console.log("bloodGroup",bloodGroup);
-  console.log("Religion",religion);
-  console.log("classRoom",classRoom);
-  console.log("Section",section);
-  console.log("admission",admission);
-  console.log("phoneNum",phoneNum);
-  console.log("uploadImage",image);
+console.log("email", email);
+console.log("firstName",firstName);
+console.log("lastName",lastName);
+console.log("gender",gender);
+console.log("password",password);
+console.log("bloodGroup",bloodGroup);
+console.log("course",course);
+console.log("telNum",phone);
+// console.log("uploadImage",image);
+console.log("relig",religion);
+console.log("depart",depart);
+console.log("calender",dateOfBirth);
+console.log("regNum",studentId);
 
 
 //   if (email !== "" && password !== "") {
-    console.log("submit successfull");
+  console.log("submit successfull");
 
-    axios({
-      method: "POST",
-      url: "https://studenttresult-mgt.onrender.com/admin/regStud",
-      data: {
-        email: email,
-        firstName:firstName,
-        lastName:lastName,
-        gender:gender,
-        DoB:dateBirth,
-        bloodGroup:bloodGroup,
-        religion:religion,
-        phoneNum:phoneNum,
-        Section:section,
-        password:regNum,      
-      },
+  axios({
+    method: "POST",
+    url: "https://studenttresult-mgt.onrender.com/user/register",
+    data: {
+      firstName:firstName,
+      lastName:lastName,
+      gender:gender,
+      bloodGroup:bloodGroup,
+      phoneNum:phone,
+      email:email,
+      password:password, 
+      course:course,
+      DoB:dateOfBirth,
+      religion:religion,
+      section:depart,
+      studId:studentId,
+    },
+  })
+    .then((res) => {
+      console.log(res);
     })
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    .catch((error) => {
+      console.log(error);
+    });
 }
 
 
