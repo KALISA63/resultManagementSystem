@@ -36,7 +36,7 @@ function addLecture() {
 // WHERE YOU WILL NEED TOKEN
 axios({
   method: "POST",
-  url: "https://online-result-management-system.onrender.com/user/register",
+  url: "https://online-result-management-system.onrender.com/users/register",
   data: {
     firstName:firstName,
     lastName:lastName,
@@ -63,33 +63,33 @@ axios({
       
     
     
-    //   if (email !== "" && password !== "") {
-        console.log("submit successfull");
+    // //   if (email !== "" && password !== "") {
+    //     console.log("submit successfull");
     
-        axios({
-          method: "POST",
-          url: "https://online-result-management-system.onrender.com/user/register",
-          data: {
-            firstName:firstName,
-            lastName:lastName,
-            lectId:lectureId,
-            gender:gender,
-            bloodGroup:bloodGroup,
-            phoneNum:phone,
-            email:email,
-            password:password, 
-            course:course,
-            DoB:dateOfBirth,
-            religion:religion,
-            section:depart,
-          },
-        })
-          .then((res) => {
-            console.log(res);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
+    //     axios({
+    //       method: "POST",
+    //       url: "https://online-result-management-system.onrender.com/user/register",
+    //       data: {
+    //         firstName:firstName,
+    //         lastName:lastName,
+    //         lectId:lectureId,
+    //         gender:gender,
+    //         bloodGroup:bloodGroup,
+    //         phoneNum:phone,
+    //         email:email,
+    //         password:password, 
+    //         course:course,
+    //         DoB:dateOfBirth,
+    //         religion:religion,
+    //         section:depart,
+    //       },
+    //     })
+    //       .then((res) => {
+    //         console.log(res);
+    //       })
+    //       .catch((error) => {
+    //         console.log(error);
+    //       });
     }
     
     

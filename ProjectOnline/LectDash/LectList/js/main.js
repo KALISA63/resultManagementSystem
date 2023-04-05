@@ -1,10 +1,10 @@
 window.onload(
     axios({
         method: "GET",
-        url: "https://studenttresult-mgt.onrender.com/lecture/getAll"
+        url: "https://online-result-management-system.onrender.com/users/getAll"
     }).then((res)=>{
         console.log(res);
-        document.getElementById("tableBody").innerHTML = res.data.lecture.map((item)=>{
+        document.getElementById("tableBody").innerHTML = res.data.user.filter((item)=>item.role == 'lecture').map((item)=>{
             return (
                 `<tr>
                 <td>
@@ -13,7 +13,7 @@ window.onload(
                             value="something">
                     </div>
                 </td>
-                <td>${item.lecId}</td>
+                <td>${item.lectId}</td>
                 <td>
                     <h2 class="table-avatar">
                         <a href="student-details.html"

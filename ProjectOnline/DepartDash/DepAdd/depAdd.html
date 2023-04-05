@@ -10,6 +10,9 @@
     <link rel="stylesheet" href=" bootstrap.min.css">
 
     <link rel="stylesheet" href=" style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -163,7 +166,6 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <form>
                                     <div class="row">
                                         <div class="col-12">
                                             <h5 class="form-title"><span>Department Details</span></h5>
@@ -171,41 +173,40 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Department ID <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="departId">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Department Name <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="departName">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Head of Department <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="HOD">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Department Start Date <span class="login-danger">*</span></label>
                                                 <input class="form-control datetimepicker" type="text"
-                                                    placeholder="DD-MM-YYYY">
+                                                    placeholder="DD-MM-YYYY" id="date">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>No of Students <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="numStud">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="student-submit">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button id="submit" onclick="addDepart()" type="submit" class="btn btn-primary">Submit</button>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -219,6 +220,8 @@
     <script src=" js/jquery-3.6.0.min.js"></script>
 
     <script src=" js/script.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

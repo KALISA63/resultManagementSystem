@@ -10,6 +10,9 @@
     <link rel="stylesheet" href=" bootstrap.min.css">
 
     <link rel="stylesheet" href=" style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -162,7 +165,6 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <form>
                                     <div class="row">
                                         <div class="col-12">
                                             <h5 class="form-title"><span>Subject Details</span></h5>
@@ -170,41 +172,26 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Subject ID <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="subId">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Subject Name <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="subName">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Class <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="subClass">
                                             </div>
                                         </div>
-                                        <!-- <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms calendar-icon">
-                                                <label>Department Start Date <span class="login-danger">*</span></label>
-                                                <input class="form-control datetimepicker" type="text"
-                                                    placeholder="DD-MM-YYYY">
-                                            </div>
-                                        </div> -->
-                                        <!-- <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>No of Students <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div> -->
-                                        <div class="col-12">
                                             <div class="student-submit">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button id="submit" onclick="addSubject()" type="submit" class="btn btn-primary">Submit</button>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -218,6 +205,8 @@
     <script src=" js/jquery-3.6.0.min.js"></script>
 
     <script src=" js/script.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

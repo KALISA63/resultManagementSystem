@@ -33,7 +33,7 @@ function updateLecture() {
 
     axios({
         method: "PATCH",
-        url: `https://studenttresult-mgt.onrender.com/lecture/updateById/${id}`,
+        url: `https://online-result-management-system.onrender.com/users/updateById/${id}`,
         data: {
             firstName:firstName,
             lastName:lastName,
