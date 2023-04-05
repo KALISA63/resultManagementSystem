@@ -1,5 +1,5 @@
 function addStudent() {
-  alert("Hello again");
+  // alert("Hello again");
 const email = document.getElementById("inputEmail1").value;
 const firstName = document.getElementById("firstName").value;
 const lastName = document.getElementById("lastName").value;
@@ -38,7 +38,7 @@ console.log("regNum",studentId);
 
   axios({
     method: "POST",
-    url: "https://studenttresult-mgt.onrender.com/user/register",
+    url: "https://online-result-management-system.onrender.com/user/register",
     data: {
       firstName:firstName,
       lastName:lastName,

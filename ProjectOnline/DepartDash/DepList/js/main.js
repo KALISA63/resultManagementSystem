@@ -4,7 +4,7 @@ window.onload(
         url: "https://online-result-management-system.onrender.com/depart/getAll"
     }).then((res)=>{
         console.log(res);
-        document.getElementById("tableBody").innerHTML = res.data.lecture.map((item)=>{
+        document.getElementById("tableBody").innerHTML = res.data.map((item)=>{
             return (
                 `                                           
                 <tr>

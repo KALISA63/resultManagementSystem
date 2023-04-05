@@ -59,38 +59,7 @@ axios({
   .catch((error) => {
     console.log(error);
   });
-
-      
-    
-    
-    // //   if (email !== "" && password !== "") {
-    //     console.log("submit successfull");
-    
-    //     axios({
-    //       method: "POST",
-    //       url: "https://online-result-management-system.onrender.com/user/register",
-    //       data: {
-    //         firstName:firstName,
-    //         lastName:lastName,
-    //         lectId:lectureId,
-    //         gender:gender,
-    //         bloodGroup:bloodGroup,
-    //         phoneNum:phone,
-    //         email:email,
-    //         password:password, 
-    //         course:course,
-    //         DoB:dateOfBirth,
-    //         religion:religion,
-    //         section:depart,
-    //       },
-    //     })
-    //       .then((res) => {
-    //         console.log(res);
-    //       })
-    //       .catch((error) => {
-    //         console.log(error);
-    //       });
-    }
+  }
     
     
     
