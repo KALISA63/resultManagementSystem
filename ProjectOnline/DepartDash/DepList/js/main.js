@@ -17,7 +17,7 @@ window.onload(
                 <td>${item.departId}</td>
                 <td>
                     <h2>
-                        <a>Mathematics ${item.departName}</a>
+                        <a>${item.departName}</a>
                     </h2>
                 </td>
                 <td>5</td>

@@ -20,10 +20,10 @@ function login() {
           window.location.href = "../ProjectOnline/adminDash/index.html"
         }
         if(res.data.others.role=="lecture"){
-          window.location.href = "../ProjectOnline/LectDash/LectView/lectView.html"
+          window.location.href = "../ProjectOnline/lectMarkDash/profile/lecProfile.html"
         }
         if(res.data.others.role=="student"){
-          window.location.href="../ProjectOnline/StudDash/studView/studView.html"
+          window.location.href="../ProjectOnline/studStudDash/studProfile/studProfile.html"
         }
 
     }).catch((error)=>{

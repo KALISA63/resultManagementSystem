@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Banana Skul - Student Details</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header">
+
+            <div class="header-left">
+                <a href="index.html" class="logo">
+<img src="img/logo.JPG" alt="Logo">
+</a>
+            </div>
+            <div class="menu-toggle">
+                <a href="javascript:void(0);" id="toggle_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+
+            <a class="mobile_btn" id="mobile_btn">
+<i class="fas fa-bars"></i>
+</a>
+
+
+            <ul class="nav user-menu">
+                <li class="nav-item dropdown language-drop me-2">
+                    <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+<img class="apple" src="img/apple.png" alt="">
+</a>
+            </li>
+
+                <li class="nav-item dropdown noti-dropdown me-2">
+                    <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+<img src="img/icons/header-icon-05.svg" alt="">
+</a></li>
+
+                <li class="nav-item zoom-screen me-2">
+                    <a href="#" class="nav-link header-nav-list">
+<img src="img/icons/header-icon-04.svg" alt="">
+</a>
+                </li>
+
+                <li class="nav-item dropdown has-arrow new-user-menus">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+<span class="user-img">
+<img class="rounded-circle" src="img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor">
+<div class="user-text">
+<h6>UMUTARE Angel</h6>
+<p class="text-muted mb-0">Administrator</p>
+</div>
+</span>
+</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                            <span>Main Menu</span>
+                        </li>
+                            <li class="submenu active">
+                                <a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                    <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
+                                </svg></i> <span> Lectures Dashboard</span>
+                                    <ul>
+                                    <li><a href="lecProfile.html" class="active">Profile</a></li>
+                                    <li><a href="../markPost/markPost.html">Mark Post</a></li>
+                                    <li><a href="../markAdd/markAdd.html">Mark add</a></li>
+                                    <li><a href="../markEdit/markEdit.html">Mark edit</a></li>
+                                    <li><a href="#">Assignment</a></li>
+                                </ul>
+                            </li>
+                        
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-sub-header">
+                                <h3 class="page-title">Lecture profile</h3>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="lecView.html">Lecture</a></li>
+                                    <li class="breadcrumb-item active">Lecture profile</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="about-info">
+                                    <h4>Profile <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h4>
+                                </div>
+                                <div class="student-profile-head">
+                                    <div class="profile-bg-img">
+                                        <img src="img/profile-bg.jpg" alt="Profile">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="profile-user-box">
+                                                <div class="profile-user-img">
+                                                    <img src="img/profile-user.jpg" alt="Profile">
+                                                </div>
+                                                <div class="names-profiles">
+                                                    <h4>INEZA L. Joran</h4>
+                                                    <h5>Music (Pianist)</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 d-flex align-items-center">
+                                            <div class="follow-group">
+                                                <div class="students-follows">
+                                                    <h5>Followers</h5>
+                                                    <h4>2850</h4>
+                                                </div>
+                                                <div class="students-follows">
+                                                    <h5>Followers</h5>
+                                                    <h4>2850</h4>
+                                                </div>
+                                                <div class="students-follows">
+                                                    <h5>Followers</h5>
+                                                    <h4>2850</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 d-flex align-items-center">
+                                            <div class="follow-btn-group">
+                                                <button type="submit" class="btn btn-info follow-btns">Follow</button>
+                                                <button type="submit" class="btn btn-info message-btns">Message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="student-personals-grp">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="heading-detail">
+                                                <h4>Personal Details :</h4>
+                                            </div>
+                                            <div class="personal-activity">
+                                                <div class="personal-icons">
+                                                    <i class="feather-user"></i>
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Name</h4>
+                                                    <h5>INEZA L. Joran</h5>
+                                                </div>
+                                            </div>
+                                            <div class="personal-activity">
+                                                <div class="personal-icons">
+                                                    <img src="img/icons/buliding-icon.svg" alt="">
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Department </h4>
+                                                    <h5>Music Instrument (Piano)</h5>
+                                                </div>
+                                            </div>
+                                            <div class="personal-activity">
+                                                <div class="personal-icons">
+                                                    <i class="feather-phone-call"></i>
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Mobile</h4>
+                                                    <h5>+91 89657 48512</h5>
+                                                </div>
+                                            </div>
+                                            <div class="personal-activity">
+                                                <div class="personal-icons">
+                                                    <i class="feather-mail"></i>
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Email</h4>
+                                                    <h5><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff9b9e968c86bf98929e9693d19c9092">[email&#160;protected]</a></h5>
+                                                </div>
+                                            </div>
+                                            <div class="personal-activity">
+                                                <div class="personal-icons">
+                                                    <i class="feather-user"></i>
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Gender</h4>
+                                                    <h5>Male</h5>
+                                                </div>
+                                            </div>
+                                            <div class="personal-activity">
+                                                <div class="personal-icons">
+                                                    <i class="feather-calendar"></i>
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Date of Birth</h4>
+                                                    <h5>22 Apr 1995</h5>
+                                                </div>
+                                            </div>
+                                            <div class="personal-activity">
+                                                <div class="personal-icons">
+                                                    <i class="feather-italic"></i>
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Language</h4>
+                                                    <h5>English, French, Lingala</h5>
+                                                </div>
+                                            </div>
+                                            <div class="personal-activity mb-0">
+                                                <div class="personal-icons">
+                                                    <i class="feather-map-pin"></i>
+                                                </div>
+                                                <div class="views-personal">
+                                                    <h4>Address</h4>
+                                                    <h5>480, Estern Avenue, Bukavu</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="student-personals-grp">
+                                    <div class="card mb-0">
+                                        <div class="card-body">
+                                            <div class="heading-detail">
+                                                <h4>Skills:</h4>
+                                            </div>
+                                            <div class="skill-blk">
+                                                <div class="skill-statistics">
+                                                    <div class="skills-head">
+                                                        <h5>Music Production</h5>
+                                                        <p>90%</p>
+                                                    </div>
+                                                    <div class="progress mb-0">
+                                                        <div class="progress-bar bg-photoshop" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-statistics">
+                                                    <div class="skills-head">
+                                                        <h5>Piano</h5>
+                                                        <p>75%</p>
+                                                    </div>
+                                                    <div class="progress mb-0">
+                                                        <div class="progress-bar bg-editor" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-statistics mb-0">
+                                                    <div class="skills-head">
+                                                        <h5>Vocal Music</h5>
+                                                        <p>95%</p>
+                                                    </div>
+                                                    <div class="progress mb-0">
+                                                        <div class="progress-bar bg-illustrator" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="student-personals-grp">
+                                    <div class="card mb-0">
+                                        <div class="card-body">
+                                            <div class="heading-detail">
+                                                <h4>About Me</h4>
+                                            </div>
+                                            <div class="hello-park">
+                                                <h5>Hello I am INEZA Levin Joran</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                    ex commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur officia deserunt mollit anim id est laborum.</p>
+                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                                            </div>
+                                            <div class="hello-park">
+                                                <h5>Education</h5>
+                                                <div class="educate-year">
+                                                    <h6>2008 - 2009</h6>
+                                                    <p>Secondary Schooling at xyz school of secondary education, DR Congo, North Kivu, Masisi.</p>
+                                                </div>
+                                                <div class="educate-year">
+                                                    <h6>2011 - 2012</h6>
+                                                    <p>Higher Secondary Schooling at xyz school of higher secondary education, DR Congo, North Kivu Goma.</p>
+                                                </div>
+                                                <div class="educate-year">
+                                                    <h6>2012 - 2015</h6>
+                                                    <p>Bachelor of Science at Abc College of Art and Science,US Arizona University.</p>
+                                                </div>
+                                                <div class="educate-year">
+                                                    <h6>2015 - 2017</h6>
+                                                    <p class="mb-0">Master of Science at Cdm College of Engineering and Technology, DR Congo, KInshasa.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src=" js/jquery-3.6.0.min.js"></script>
+
+    <script src=" js/script.js"></script>
+
+</body>
+
+</html>
