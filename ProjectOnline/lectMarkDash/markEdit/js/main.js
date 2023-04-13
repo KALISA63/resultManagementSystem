@@ -4,11 +4,13 @@ console.log(id, "ID");
 function editSubject(){
     const studId=document.getElementById("studId").value;
     const studName=document.getElementById("studName").value;
+    const studSubj=document.getElementById("studSubject").value;
     const studMark=document.getElementById("studMark").value;
 
 
     console.log("studId",studId);
     console.log("studName",studName);
+    console.log("studSub",studSubj);
     console.log("studMark",studMark);
 
 
@@ -17,9 +19,10 @@ function editSubject(){
         url: "https://online-result-management-system.onrender.com/mark/editById/",
         data: {
             
-            subjectId:studId,
-            subjectName:studName,
-            class:studMark
+            studtId:studId,
+            studName:studName,
+            subject:studSubj,
+            mark:studMark
         
 },
 headers: { "token":`Bearer ${localStorage.getItem('token')}`}
@@ -30,5 +33,4 @@ headers: { "token":`Bearer ${localStorage.getItem('token')}`}
 .catch((error) => {
     console.log(error);
 });
-
 }
