@@ -11,7 +11,7 @@ function addMark(){
 
     axios({
         method: "POST",
-        url: "https://online-result-management-system.onrender.com/subjects/register",
+        url: "https://online-result-management-system.onrender.com/mark/register",
         data: {
             
             subjectId:studId,

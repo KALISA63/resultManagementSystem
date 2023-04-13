@@ -14,7 +14,7 @@ function editSubject(){
 
     axios({
         method: "POST",
-        url: "https://online-result-management-system.onrender.com/subjects/editById/",
+        url: "https://online-result-management-system.onrender.com/mark/editById/",
         data: {
             
             subjectId:studId,

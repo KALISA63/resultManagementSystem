@@ -1,7 +1,7 @@
 window.onload(
     axios({
         method: "GET",
-        url: "https://online-result-management-system.onrender.com/subjects/getAll"
+        url: "https://online-result-management-system.onrender.com/mark/getAll"
     }).then((res)=>{
         console.log(res);
         document.getElementById("tableBody").innerHTML = res.data.map((item)=>{
@@ -14,10 +14,10 @@ window.onload(
                             value="something">
                     </div>
                 </td>
-                <td>${item.subjectId}</td>
+                <td>${item.markId}</td>
                 <td>
                     <h2>
-                        <a>${item.subjectName}</a>
+                        <a>${item.studName}</a>
                     </h2>
                 </td>
                 <td>5</td>
