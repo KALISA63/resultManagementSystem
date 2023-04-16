@@ -3,7 +3,7 @@ window.onload(
         method: "GET",
         url: "https://studenttresult-mgt.onrender.com/student/getAll"
     }).then((res)=>{
-        console.log(res);
+        console.log("students",res);
         document.getElementById("tableBody").innerHTML = res.data.student.map((item)=>{
             return (
                 `<tr>
@@ -35,7 +35,7 @@ window.onload(
                             class="btn btn-sm bg-success-light me-2 ">
                             <i class="feather-eye"></i>
                         </a>
-                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                        <a href="edit-student.html"  class="btn btn-sm bg-danger-light">
                             <i class="feather-edit"></i>
                         </a>
                     </div>

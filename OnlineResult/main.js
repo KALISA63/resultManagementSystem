@@ -27,7 +27,9 @@ function login() {
         }
 
     }).catch((error)=>{
-        console.log(error)
+        console.log(error);
+        // document.querySelector('.error').innerHTML = error.message;
+        window.alert(error)
     })
   } else {
     alert("Provide all information");
