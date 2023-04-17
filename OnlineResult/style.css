@@ -2464,13 +2464,13 @@ background: #98c1d9;
   position: absolute;
 width: 103px;
 height: 67px;
-left: 1116px;
+left: 1146px;
 top: 1160px;
 
 font-family: 'Lato';
 font-style: normal;
-font-weight: 700;
-font-size: 32px;
+font-weight: 300;
+font-size: 16px;
 line-height: 39px;
 }
 
@@ -2478,13 +2478,13 @@ line-height: 39px;
   position: absolute;
   width: 108px;
   height: 67px;
-  left: 724px;
+  left: 764px;
   top: 1160px;
   
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 39px;
 }
 
@@ -2492,7 +2492,7 @@ line-height: 39px;
   position: absolute;
   width: 357px;
   height: 197px;
-  left: 734px;
+  left: 754px;
   top: 1488px;
   
   font-family: 'Lato';
@@ -2508,15 +2508,14 @@ line-height: 39px;
   position: absolute;
   width: 130px;
   height: 67px;
-  left: 1094px;
+  left: 1144px;
   top: 1486px;
   
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 39px;  
   color: #242B34;
 }
 
