@@ -2490,15 +2490,15 @@ line-height: 39px;
 
 .dru{
   position: absolute;
-  width: 147px;
-  height: 67px;
-  left: 724px;
+  width: 357px;
+  height: 197px;
+  left: 734px;
   top: 1488px;
   
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 39px;
   
   color: #242B34;
@@ -2576,8 +2576,8 @@ line-height: 39px;
 
 .giV{
   position: absolute;
-  width: 381px;
-  height: 270px;
+  width: 316px;
+  height: 259px;
   left: 960px;
   top: 1900px;
   
@@ -2640,7 +2640,7 @@ border-radius: 9.27px;
 position: absolute;
 width: 404px;
 height: 234px;
-left: 530px;
+left: 510px;
 top: 2672px;
 
 border-radius: 9.27px;
