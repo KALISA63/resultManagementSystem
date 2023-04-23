@@ -1,14 +1,14 @@
 function addDepart(){
     const departId=document.getElementById("departId").value;
     const departName=document.getElementById("departName").value;
-    const departHead=document.getElementById("HOD").value;
+    const departHead=document.getElementById("departHead").value;
     const departDate=document.getElementById("date").value;
     const studNum=document.getElementById("numStud").value;
 
 
     console.log("departId",departId);
     console.log("departName",departName);
-    console.log("HOD",departHead);
+    console.log("departHead",departHead);
     console.log("date",departDate);
     console.log("numStud",studNum);
 
