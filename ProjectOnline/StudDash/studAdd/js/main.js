@@ -38,7 +38,7 @@ console.log("regNum",studentId);
 
   axios({
     method: "POST",
-    url: "https://online-result-management-system.onrender.com/user/register",
+    url: "https://online-result-management-system.onrender.com/users/register",
     data: {
       firstName:firstName,
       lastName:lastName,
