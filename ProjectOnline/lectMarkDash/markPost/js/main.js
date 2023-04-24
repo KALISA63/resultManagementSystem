@@ -14,7 +14,7 @@ window.onload(
                             value="something">
                     </div>
                 </td>
-                <td>${item.markId}</td>
+                <td>${item.studId}</td>
                 <td>
                     <h2>
                         <a>${item.studName}</a>

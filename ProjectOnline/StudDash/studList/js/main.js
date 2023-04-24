@@ -14,7 +14,7 @@ axios({
                         value="something">
                 </div>
                 </td>
-                <td>${item.studentId}</td>
+                <td>${item.studId}</td>
                 <td>
                     <h2 class="table-avatar">
                         <a href="student-details.html"
