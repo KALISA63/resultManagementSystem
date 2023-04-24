@@ -33,7 +33,7 @@ form.addEventListener("submit",(e) =>{
             religion:religion,
             section:depart,
             studId:studentId,
-          }
+}
     axios({
         method: "PATCH",
         url: `https://online-result-management-system.onrender.com/users/editById/${studId}`,
@@ -47,6 +47,8 @@ form.addEventListener("submit",(e) =>{
     console.log(error.message);
 });
 });
+
+//getting student by ID
 
 window.onload = (event) =>{
 if(studId){
