@@ -12,6 +12,7 @@ function addDepart(){
     console.log("date",departDate);
     console.log("numStud",studNum);
 
+    console.log("token" , localStorage.getItem('token'))
 
     axios({
         method: "POST",
@@ -27,7 +28,7 @@ function addDepart(){
 headers: { "token":`Bearer ${localStorage.getItem('token')}`}
 })
 .then((res) => {
-    console.log(res);
+    console.log(res.data);
 })
 .catch((error) => {
     console.log(error);

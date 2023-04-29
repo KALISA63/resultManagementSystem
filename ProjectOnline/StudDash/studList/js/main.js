@@ -1,11 +1,23 @@
+// const dataFetch = async () =>{
+//     try {
+//         const res = axios.get('https://online-result-management-system.onrender.com/users/getAll');
+//         console.log("DATATAA",res.data)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// };
+
+// dataFetch();
+
 window.onload(
 axios({
     method: "GET",
     url: "https://online-result-management-system.onrender.com/users/getAll",
 })
     .then((res) => {
-    console.log("students", res);
-    document.getElementById("tableBody").innerHTML = res.data.student.map((item) => {
+    const students = res.data.user.filter(user => user.role === 'student' )
+    console.log(students)
+    document.getElementById("tableBody").innerHTML = students.map((item) => {
         return (
             `<tr>
             <td>
