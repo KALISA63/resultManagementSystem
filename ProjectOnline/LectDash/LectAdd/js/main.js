@@ -1,6 +1,6 @@
 function addLecture() {
       // alert("Hello again");
-      const email = document.getElementById("inputEmail1").value;
+      const email = document.getElementById("Email").value;
       const firstName = document.getElementById("firstName").value;
       const lastName = document.getElementById("lastName").value;
       const gender = document.getElementById("gender").value;
@@ -9,10 +9,10 @@ function addLecture() {
       const bloodGroup=document.getElementById('bloodGroup').value;
       const course=document.getElementById('course').value;
       const phone=document.getElementById('telNum').value;
-      const dateOfBirth=document.getElementById('calender').value;
-      const religion=document.getElementById('relig').value;
-      const depart=document.getElementById('depart').value;
-      const image=document.getElementById('uploadImage').value;
+      // const dateOfBirth=document.getElementById('calender').value;
+      // const religion=document.getElementById('relig').value;
+      // const depart=document.getElementById('depart').value;
+      // const image=document.getElementById('uploadImage').value;
     
     
     
@@ -27,10 +27,10 @@ function addLecture() {
       console.log("bloodGroup",bloodGroup);
       console.log("course",course);
       console.log("telNum",phone);
-      console.log("uploadImage",image);
-      console.log("relig",religion);
-      console.log("depart",depart);
-      console.log("calender",dateOfBirth);
+      // console.log("uploadImage",image);
+      // console.log("relig",religion);
+      // console.log("depart",depart);
+      // console.log("calender",dateOfBirth);
 
 
 // WHERE YOU WILL NEED TOKEN
@@ -47,9 +47,9 @@ axios({
     email:email,
     password:password, 
     course:course,
-    DoB:dateOfBirth,
-    religion:religion,
-    section:depart,
+    // DoB:dateOfBirth,
+    // religion:religion,
+    // section:depart,
   },
   headers: { "token":`Bearer ${localStorage.getItem('token')}`}
 })

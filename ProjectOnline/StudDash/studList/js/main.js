@@ -1,14 +1,3 @@
-// const dataFetch = async () =>{
-//     try {
-//         const res = axios.get('https://online-result-management-system.onrender.com/users/getAll');
-//         console.log("DATATAA",res.data)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// };
-
-// dataFetch();
-
 window.onload(
 axios({
     method: "GET",
@@ -27,32 +16,17 @@ axios({
                 </div>
                 </td>
                 <td>${item.studId}</td>
-                <td>
-                    <h2 class="table-avatar">
-                        <a href="student-details.html"
-                            class="avatar avatar-sm me-2"><img
-                                class="avatar-img rounded-circle"
-                                src=" img/profiles/avatar-17.jpg"
-                                alt="User Image"></a>
-                        <a href="student-details.html">${item.firstName}</a>
-                    </h2>
-                </td>
-                <td>10 A</td>
-                <td>2 Feb 2002</td>
-                <td>Shogal</td>
-                <td>097 3584 5870</td>
-                <td>911 South Calorina,USA</td>
-                <td class="text-end">
-                    <div class="actions ">
-                        <a href="javascript:;"
-                            class="btn btn-sm bg-success-light me-2 ">
-                            <i class="feather-eye"></i>
-                        </a>
-                        <a href="edit-student.html"  class="btn btn-sm bg-danger-light">
-                            <i class="feather-edit"></i>
-                        </a>
-                    </div>
-                </td>
+                <td>${item.firstName}</td>
+                <td>${item.lastName}</td>
+                <td>${item.email}</td>
+                <td>${item.gender}</td>
+                <td>${item.phoneNum}</td>                
+                <td>${item.section}</td>
+                <td>${item.DoB}</td>
+                <td>${item.section}</td>
+                <td>${item.course}</td>
+                <td>${item.religion}</td>
+                <td>${item.bloodGroup}</td>
             </tr>`
         )
         }
@@ -63,3 +37,13 @@ axios({
     })
 );
 
+//                <td>
+{/* <h2 class="table-avatar">
+<a href="student-details.html"
+    class="avatar avatar-sm me-2"><img
+        class="avatar-img rounded-circle"
+        src=" img/profiles/avatar-17.jpg"
+        alt="User Image"></a>
+<a href="student-details.html">${item.firstName}</a>
+</h2>
+</td> */}
